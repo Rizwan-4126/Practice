@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main"
+            app:startDestination="@id/indexFragment2">
+    <fragment android:id="@+id/indexFragment2" android:name="org.d3if0027.praasessment.IndexFragment"
+              android:label="IndexFragment">
+        <action android:id="@+id/action_indexFragment2_to_persegiFragment" app:destination="@id/persegiFragment"/>
+        <action android:id="@+id/action_indexFragment2_to_segitigaFragment" app:destination="@id/segitigaFragment"/>
+    </fragment>
+    <fragment android:id="@+id/persegiFragment" android:name="org.d3if0027.praasessment.PersegiFragment"
+              android:label="PersegiFragment"/>
+    <fragment android:id="@+id/segitigaFragment" android:name="org.d3if0027.praasessment.SegitigaFragment"
+              android:label="SegitigaFragment"/>
+    <fragment android:id="@+id/about" android:name="org.d3if0027.praasessment.AboutFragment"
+              android:label="AboutFragment"/>
+</navigation>

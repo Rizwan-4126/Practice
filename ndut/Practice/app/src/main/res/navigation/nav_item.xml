@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_item"
+    app:startDestination="@id/tesFragment">
+
+    <fragment
+        android:id="@+id/tesFragment"
+        android:name="org.d3ifcool.practice.TesFragment"
+        android:label="TesFragment" >
+        <action
+            android:id="@+id/action_tesFragment_to_hitungFragment"
+            app:destination="@id/hitungFragment" />
+        <action
+            android:id="@+id/action_tesFragment_to_saranFragment"
+            app:destination="@id/saranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hitungFragment"
+        android:name="org.d3ifcool.practice.HitungFragment"
+        android:label="HitungFragment" />
+    <fragment
+        android:id="@+id/saranFragment"
+        android:name="org.d3ifcool.practice.SaranFragment"
+        android:label="SaranFragment" />
+    <fragment
+        android:id="@+id/about"
+        android:name="org.d3ifcool.practice.AboutFragment"
+        android:label="AboutFragment" />
+</navigation>
